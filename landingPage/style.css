@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video                            { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section                  { display: block; }
+body                                                { line-height: 1; }
+ol, ul                                              { list-style: none; }
+blockquote, q                                       { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after                                   { content: ''; content: none; }
+table                                               { border-collapse: collapse; border-spacing: 0; }
+
+/*general*/
+body { font-family: 'Roboto', sans-serif; color: #939598; }
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: ""; clear: both; height: 0; }
+.main { max-width: 1200px; margin: 0 auto; padding: 0 25px; }
+a { text-decoration: none; color: initial; }
+
+/*spritesheet loading*/
+.mailImage,
+.phoneImage,
+.liveChatImage,
+.burgerMenu,
+.informationPictureRocket { background: url("./images/sprites.png") 0 200px no-repeat; display: block; }
+
+/* header */
+.header { background-color: #313131; padding-top: 4px; padding-bottom: 10px; }
+.logo { background: url("./images/logo.png") no-repeat; width: 137px; height: 82px; float: left; }
+.burgerMenu { background-position: 0 -100px; width: 48px; height: 25px; float: right; margin-top: 33px; }
+
+/*information about the brand and open account form*/
+.openAccountSectionInnerContainer { margin-bottom: 123px; }
+.openAccountSection { background: url("./images/bg.jpg") no-repeat; background-size: cover; border-top: 2px solid #454545; border: 1px solid #3d3d3d; }
+.information { float: left; width: 50%; text-align: center; }
+.informationPictureRocket { background-position: 0 0; width: 57px; height: 56px; display: inline-block; margin-bottom: 35px; margin-top: 155px; }
+.informationTitle { color: #2daae9; font-size: 35px; font-weight: bold; }
+.informationText { color: #fff; font-size: 24px; margin-top: 35px; }
+.openAccountFormOuterContainer { width: 50%; float: right; margin-top: 93px; }
+.openAccountFormInnerContainer { margin: 0 auto; background-color: #fff; width: 380px; }
+.openAccountFormHeader { background-color: #e8e8e8; border-bottom: 1px solid #dfdfdf; border-top: 1px solid #dfdfdf; }
+.openAccountFormInnerContainer { color: #374750; }
+.openAccountFormHeader h2 { color: #2daae9; font-size: 20px; text-align: center; padding: 10px 0; }
+.openAccountFormHeader h2 span { font-size: 15px; color: #000; }
+
+input#terms { width: 20px;  height: 20px; float: left; margin-right: 10px; }
+#terms + span { font-size: 10px;  }
+#account_form .formFourthRow .termsLabel{     width: 89%; font-size: 10px; margin-top: 4px;  float: right; }
+.openAccountFormInnerContainer label:nth-child(1) { width: 50%; float: left; }
+.openAccountFormInnerContainer label:nth-child(2) { width: 50%; float: right; }
+.openAccountFormInnerContainer label{font-size: 15px;}
+.formRow { margin: 21px 26px; }
+.openAccountFormInnerContainer input { width: 158px; height: 33px; border: 1px solid #a1a8ad; }
+.formFifthRow button { display: block; margin: 0 auto; width: 85%; color: #ffffff; cursor: pointer; height: 55px; padding:0 20px 0; font-size: 20px; border-radius: 5px; border: none; background: #1a88bf; background: -moz-linear-gradient(top, #1a88bf 0%, #2aa5e2 100%); background: -webkit-gradient(left top, left bottom, color-stop(0%, #1a88bf), color-stop(100%, #2aa5e2)); background: -webkit-linear-gradient(top, #1a88bf 0%, #2aa5e2 100%); background: -o-linear-gradient(top, #1a88bf 0%, #2aa5e2 100%); background: -ms-linear-gradient(top, #1a88bf 0%, #2aa5e2 100%); background: linear-gradient(to bottom, #1a88bf 0%, #2aa5e2 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a88bf', endColorstr='#2aa5e2', GradientType=0 ); }
+.formFifthRow button:hover { background: #2aa5e2; background: -moz-linear-gradient(top, #2aa5e2 0%, #2aa5e2 100%); background: -webkit-gradient(left top, left bottom, color-stop(0%, #2aa5e2), color-stop(100%, #1a88bf)); background: -webkit-linear-gradient(top, #1a88bf 0%, #1a88bf 100%); background: -o-linear-gradient(top, #1a88bf 0%, #1a88bf 100%); background: -ms-linear-gradient(top, #1a88bf 0%, #1a88bf 100%); background: linear-gradient(to bottom, #1a88bf 0%, #1a88bf 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a88bf', endColorstr='#1a88bf', GradientType=0 ); }
+.formFifthRow { padding-bottom: 20px; }
+.formRow  { height: 72px;}
+.formThirdRow,
+.formSecondRow {margin-top: 31px; }
+.formThirdRow { margin-bottom: 27px;}
+.somethingWentWrongMessage { background-color: #db3636; display: none;  color: #fff; font-size: 15px; padding: 10px; padding-left: 30px; line-height: 18px;}
+.somethingWentWrongMessage i { font-style: italic; }
+
+.formFourthRow { position: relative;}
+#account_form .checkboxlabel { width: 20px; height: 20px; cursor: pointer; position: absolute; top: 0; left: 0; background: #fff; border: 1px solid #ccc; }
+.checkboxlabel:after { content: ''; width: 9px; height: 5px; position: absolute; top: 4px; left: 4px; border: 3px solid #333; border-top: none; border-right: none; background: transparent; opacity: 0; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+input[type=checkbox] { visibility: hidden; }
+input[type=checkbox]:checked + .checkboxlabel:after { opacity: 1; }
+label#terms-error { position: absolute; top: 40px; }
+
+/* footer */
+.bottomMenuAndLogoOuterContainer { padding-top: 35px; background-color: #313131; border-bottom: 1px solid #4b4c4c; }
+.logoBottomOuter { float: left; width: 35%; }
+.logoBottom { background: url("./images/logo.png") no-repeat; width: 137px; height: 82px; float: left; margin-top: 4px; margin-bottom: 10px; }
+.liveChatImage { background-position: 0 -200px; width: 34px; height: 34px; display: inline-block; }
+.phoneImage { background-position: 0 -300px; width: 34px; height: 34px; display: inline-block; }
+.mailImage { background-position: 0 -400px; width: 34px; height: 34px; display: inline-block; }
+.category { padding: 0 20px; float: left; box-sizing: border-box; text-align: left; }
+.category b { margin-bottom: 15px; font-size: 18px; font-weight: 300; display: block; color: #bcbec0; }
+.category a { margin-bottom: 10px; font-size: 13px; display: block; color: #939598; }
+.category a:hover { text-decoration: underline; }
+.bottomMenu { float: right; width: 65%; }
+.contactInformation .image { margin-right: 10px; }
+.contactInformation a { color: #bcbec0; font-size: 14px; margin-top: -30px;     margin-top: -30px; display: inline-block; vertical-align: middle;}
+
+/* risk disclamer */
+.riskDisclamer { line-height: 26px; background-color: #292828; color: #939598; text-align: center; font-size: 13px; padding-top: 30px; padding-bottom: 35px; }
+
+/* form errors */
+#account_form label.error {font-size: 12px;float: left;padding-top: 4px;padding-left: 2px;color: #374750;line-height: 12px;background-color: #ffcccc;width: 156px;display: block;height: 35px;border-top: 1px solid #ff9a9a;border-bottom: 1px solid #ff9a9a;border-left: 1px solid #ff6060;border-right: 1px solid #ff6060;}
+
+/*resizes */
+@media only screen and (max-width: 1000px) {
+    .openAccountFormOuterContainer { width: 100%; }
+    .information { width: 100%; }
+}
+
+@media only screen and (max-width: 1150px) {
+    .category { width: 25%; }
+}
+
+@media only screen and (max-width: 950px) {
+    .bottomMenu { float: none; width: 100%; }
+    .logoBottomOuter { float: none; width: 100%; margin-bottom: 30px; }
+    .logoBottom { float: none; display: block; margin: 0 auto; }
+}
+
+@media only screen and (max-width: 650px) {
+    .category a { font-size: 2vw; }
+    .category b { font-size: 2.8vw; }
+}
+
+
+@media only screen and (max-width: 430px) {
+    .openAccountFormInnerContainer label { font-size: 10px;}
+    .openAccountFormInnerContainer input{ width: 110px;}
+    .openAccountFormInnerContainer { width: 280px; }
+    #account_form .formFourthRow .termsLabel { width: 85%;}
+    #account_form label.error { width: 108px; }
+
+}
